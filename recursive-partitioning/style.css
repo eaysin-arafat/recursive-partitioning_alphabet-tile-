@@ -1,0 +1,50 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#container {
+  width: 100vw;
+  height: 100vh;
+  background-color: #ddd;
+  overflow: hidden; /* Added overflow: hidden to prevent content overflow */
+  display: flex; /* Changed display to flex for equal height and width */
+  flex-wrap: wrap; /* Added flex-wrap for wrapping partitions */
+}
+
+.partition {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  flex: 1 0 auto; /* Added flex: 1 0 auto for equal height and width */
+}
+
+.partition:nth-child(odd) {
+  background-color: #eee;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ddd;
+}

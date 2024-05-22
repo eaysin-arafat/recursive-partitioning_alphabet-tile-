@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.layout-builder {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.partition {
+  flex: 1 0 auto;
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid #ddd;
+}
+
+button {
+  margin: 5px;
+}
+
+.resizer {
+  width: 5px;
+  height: 100%;
+  cursor: col-resize;
+  background-color: #ddd;
+}
